@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item {
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  border: 1px solid;
+}
+
+div p {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  nav {
+    position: fixed;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .call-to-action {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  div p {
+    font-size: 24px;
+  }
+}
